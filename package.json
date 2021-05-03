@@ -1,0 +1,25 @@
+{
+  "name": "proxy-server",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "run-proxy": "./bin/cmd.js"
+  },
+  "scripts": {
+    "proxy": "node ./bin/cmd.js",
+    "test": "mocha"
+  },
+  "keywords": [
+    "proxy", "http", "koa"
+  ],
+  "author": "edfus",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mocha": "^8.2.2"
+  },
+  "dependencies": {
+    "forward-proxy-tunnel": "^1.1.9"
+  }
+}
