@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env node
 
 import { App, ProxyServer } from "../index.js";
 import { inspect } from "util";
@@ -25,7 +25,6 @@ const hostname = (
 
 if (argvs.length) {
   console.info("Unrecognized arguments:", argvs);
-  onFallback();
 }
 
 if (downstreamProxy) {

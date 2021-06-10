@@ -99,7 +99,7 @@ class App extends EventEmitter {
             if(socket.bytesWritten) {
               socket.destroy();
             } else {
-              socket.write(`HTTP/1.1 ${status} ohhhh\r\n\r\n`);
+              socket.write(`HTTP/1.1 ${status} an error occurred\r\n\r\n`);
               ctx.state.status = status;
             }
           }

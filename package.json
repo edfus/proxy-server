@@ -1,11 +1,11 @@
 {
-  "name": "proxy-server",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@edfus/proxy-server",
+  "version": "0.2.1",
+  "description": "A transparent forward http[s] proxy server written in Koa style",
   "type": "module",
   "main": "index.js",
   "bin": {
-    "run-proxy": "./bin/cmd.js"
+    "proxy": "./bin/cmd.js"
   },
   "scripts": {
     "proxy": "node ./bin/cmd.js",
@@ -15,6 +15,10 @@
     "proxy", "http", "koa"
   ],
   "author": "edfus",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edfus/proxy-server.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "@types/mocha": "^8.2.2"
